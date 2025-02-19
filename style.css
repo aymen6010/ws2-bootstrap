@@ -3,14 +3,21 @@ header{
     top: 0;
     z-index: 10;
 }
-.hero{
-    background-color: #ffffff;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(156,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%2380F'/%3E%3Cstop offset='1' stop-color='%23f40'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='25' height='25' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12.5' cy='12.5' r='12.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.24'/%3E%3C/svg%3E");
-background-attachment: fixed;
-    min-height: 100vh;
-}   
+
 
 .image-card{
     height: 15rem;
     object-fit: cover;
+}
+.text-box {
+  padding: 20px;           /* Espacement à l'intérieur du cadre */
+  border: 2px solid #000;  /* Bordure noire autour du cadre */
+  background-color: rgba(255, 255, 255, 0.8); /* Fond légèrement transparent */
+  display: inline-block;    /* Pour ajuster la taille en fonction du contenu */
+  border-radius: 8px;      /* Coins arrondis pour un style plus doux */
+  margin-bottom: 20px;      /* Espace entre le cadre et le bouton */
+}
+
+.text-box h4, .text-box p {
+  margin: 0;  /* Enlever la marge par défaut */
 }
